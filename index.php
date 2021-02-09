@@ -18,7 +18,7 @@ $data = array(
   'name'   => 'Dejan',
   'msg'    => 'Test'
   );
-app($app, $data);
+appTelegram($app, $data);
 
 // bootstrap stayle and js
 echo css_js_jquery\Css::BOOTSTRAP_MIN,
