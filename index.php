@@ -2,15 +2,23 @@
 define('BASEPATH', true);
 // Modules, BootStyle, Sites
 include "apps/basicApp/root.php";
-
-// app($app, $array);
-include "apps/basicApp/app.php";
-
 root\Modules::basic();
 root\BootStyle::basic();
 root\Sites::sites();
 
+// env file
+$env = new Env('.env');
+var_dump($env->dotEnv('BOT'));
 
+
+// appTelegram($app, $array); (telegram, etc...)
+include "apps/basicApp/app.php";
+$data = array(
+  'header' => 'Header',
+  'name'   => 'Dejan',
+  'msg'    => 'Test'
+  );
+app($app, $data);
 
 // bootstrap stayle and js
 echo css_js_jquery\Css::BOOTSTRAP_MIN,

@@ -3,7 +3,7 @@
 
 
 // Dont change
-function app($app, $data){
+function appTelegram($app, $data){
   $env = new Env($app[0][0]['ENV']);
   $ip = new IpLocation($app[0][0]['IP']);
   $telegram = new Telegram($env->dotEnv($app[0][0]['BOT']), $env->dotEnv($app[0][0]['ID']));
