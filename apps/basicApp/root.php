@@ -18,7 +18,7 @@ class BootStyle{
 
 class Sites{
   static function sites(){
-    include "./sites/site.php";
+    include "./sites/index.php";
   }
 }
 
