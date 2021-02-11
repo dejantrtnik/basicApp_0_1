@@ -7,9 +7,8 @@ root\BootStyle::basic();
 root\Sites::sites();
 
 // env file
-$env = new Env('.env');
-var_dump($env->dotEnv('BOT'));
-
+//$env = new Env('.env');
+var_dump((new Env('.env'))->dotEnv('BOT'));
 
 // appTelegram($app, $array); (telegram, etc...)
 include "apps/basicApp/app.php";
